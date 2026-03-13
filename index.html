@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국내 견과류 비교 인포그래픽</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <p class="hero-label">KOREAN NUTS INFOGRAPHIC</p>
+            <h1>국내 견과류<br><span class="highlight">완벽 비교 가이드</span></h1>
+            <p class="hero-desc">영양소, 칼로리, 효능까지 한눈에 비교하세요</p>
+            <div class="scroll-indicator">
+                <span>아래로 스크롤</span>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Summary Cards -->
+    <section class="section summary-section">
+        <div class="container">
+            <h2 class="section-title">견과류 한눈에 보기</h2>
+            <p class="section-desc">100g 기준 주요 영양 정보</p>
+            <div class="nut-cards">
+                <div class="nut-card" data-nut="almond">
+                    <div class="nut-icon">🥜</div>
+                    <h3>아몬드</h3>
+                    <div class="nut-calories">579 kcal</div>
+                    <div class="nut-tags">
+                        <span class="tag tag-vitamin">비타민E</span>
+                        <span class="tag tag-mineral">마그네슘</span>
+                    </div>
+                    <p class="nut-brief">피부 건강과 항산화에 탁월</p>
+                </div>
+                <div class="nut-card" data-nut="walnut">
+                    <div class="nut-icon">🧠</div>
+                    <h3>호두</h3>
+                    <div class="nut-calories">654 kcal</div>
+                    <div class="nut-tags">
+                        <span class="tag tag-fat">오메가3</span>
+                        <span class="tag tag-mineral">아연</span>
+                    </div>
+                    <p class="nut-brief">두뇌 건강과 기억력 향상</p>
+                </div>
+                <div class="nut-card" data-nut="cashew">
+                    <div class="nut-icon">🌰</div>
+                    <h3>캐슈넛</h3>
+                    <div class="nut-calories">553 kcal</div>
+                    <div class="nut-tags">
+                        <span class="tag tag-mineral">철분</span>
+                        <span class="tag tag-mineral">구리</span>
+                    </div>
+                    <p class="nut-brief">빈혈 예방과 면역력 강화</p>
+                </div>
+                <div class="nut-card" data-nut="macadamia">
+                    <div class="nut-icon">⚪</div>
+                    <h3>마카다미아</h3>
+                    <div class="nut-calories">718 kcal</div>
+                    <div class="nut-tags">
+                        <span class="tag tag-fat">올레산</span>
+                        <span class="tag tag-vitamin">B1</span>
+                    </div>
+                    <p class="nut-brief">심혈관 건강과 콜레스테롤 관리</p>
+                </div>
+                <div class="nut-card" data-nut="pistachio">
+                    <div class="nut-icon">💚</div>
+                    <h3>피스타치오</h3>
+                    <div class="nut-calories">560 kcal</div>
+                    <div class="nut-tags">
+                        <span class="tag tag-vitamin">비타민B6</span>
+                        <span class="tag tag-mineral">칼륨</span>
+                    </div>
+                    <p class="nut-brief">눈 건강과 혈당 조절</p>
+                </div>
+                <div class="nut-card" data-nut="peanut">
+                    <div class="nut-icon">🥜</div>
+                    <h3>땅콩</h3>
+                    <div class="nut-calories">567 kcal</div>
+                    <div class="nut-tags">
+                        <span class="tag tag-protein">단백질</span>
+                        <span class="tag tag-vitamin">나이아신</span>
+                    </div>
+                    <p class="nut-brief">근육 생성과 에너지 공급</p>
+                </div>
+                <div class="nut-card" data-nut="brazil">
+                    <div class="nut-icon">🌿</div>
+                    <h3>브라질너트</h3>
+                    <div class="nut-calories">659 kcal</div>
+                    <div class="nut-tags">
+                        <span class="tag tag-mineral">셀레늄</span>
+                        <span class="tag tag-fat">불포화지방</span>
+                    </div>
+                    <p class="nut-brief">갑상선 건강과 항산화 효과</p>
+                </div>
+                <div class="nut-card" data-nut="hazelnut">
+                    <div class="nut-icon">🤎</div>
+                    <h3>헤이즐넛</h3>
+                    <div class="nut-calories">628 kcal</div>
+                    <div class="nut-tags">
+                        <span class="tag tag-vitamin">비타민E</span>
+                        <span class="tag tag-fat">올레산</span>
+                    </div>
+                    <p class="nut-brief">피부 노화 방지와 혈관 건강</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Comparison Chart -->
+    <section class="section chart-section">
+        <div class="container">
+            <h2 class="section-title">영양소 비교 차트</h2>
+            <p class="section-desc">100g 기준 주요 영양소 함량 비교</p>
+
+            <div class="chart-tabs">
+                <button class="chart-tab active" data-chart="calories">칼로리</button>
+                <button class="chart-tab" data-chart="protein">단백질</button>
+                <button class="chart-tab" data-chart="fat">지방</button>
+                <button class="chart-tab" data-chart="fiber">식이섬유</button>
+                <button class="chart-tab" data-chart="vitaminE">비타민E</button>
+            </div>
+
+            <div class="bar-chart" id="barChart">
+                <!-- Bars rendered by JS -->
+            </div>
+            <p class="chart-unit" id="chartUnit">단위: kcal (100g 기준)</p>
+        </div>
+    </section>
+
+    <!-- Radar / Detail Section -->
+    <section class="section detail-section">
+        <div class="container">
+            <h2 class="section-title">견과류별 상세 영양 프로필</h2>
+            <p class="section-desc">견과류를 선택하면 상세 정보를 확인할 수 있습니다</p>
+
+            <div class="detail-selector">
+                <button class="detail-btn active" data-detail="almond">아몬드</button>
+                <button class="detail-btn" data-detail="walnut">호두</button>
+                <button class="detail-btn" data-detail="cashew">캐슈넛</button>
+                <button class="detail-btn" data-detail="macadamia">마카다미아</button>
+                <button class="detail-btn" data-detail="pistachio">피스타치오</button>
+                <button class="detail-btn" data-detail="peanut">땅콩</button>
+                <button class="detail-btn" data-detail="brazil">브라질너트</button>
+                <button class="detail-btn" data-detail="hazelnut">헤이즐넛</button>
+            </div>
+
+            <div class="detail-content" id="detailContent">
+                <div class="detail-grid">
+                    <div class="detail-left">
+                        <div class="detail-icon" id="detailIcon">🥜</div>
+                        <h3 id="detailName">아몬드</h3>
+                        <p class="detail-origin" id="detailOrigin">원산지: 미국, 호주</p>
+                        <p class="detail-desc" id="detailDesc">비타민E가 풍부하여 피부 건강과 항산화 효과가 뛰어납니다. 마그네슘이 풍부해 근육 이완과 스트레스 해소에 도움을 줍니다.</p>
+                        <div class="detail-benefits" id="detailBenefits">
+                            <h4>주요 효능</h4>
+                            <ul>
+                                <li>피부 건강 개선</li>
+                                <li>항산화 작용</li>
+                                <li>혈당 조절</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-right">
+                        <h4>영양소 구성 (100g)</h4>
+                        <div class="nutrient-bars" id="nutrientBars">
+                            <!-- Rendered by JS -->
+                        </div>
+                        <div class="daily-intake" id="dailyIntake">
+                            <h4>하루 권장 섭취량</h4>
+                            <div class="intake-visual">
+                                <span class="intake-amount" id="intakeAmount">23알</span>
+                                <span class="intake-grams" id="intakeGrams">(약 30g)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Comparison -->
+    <section class="section price-section">
+        <div class="container">
+            <h2 class="section-title">국내 시중 가격 비교</h2>
+            <p class="section-desc">100g 기준 평균 소비자가 (2024~2025 기준)</p>
+            <div class="price-chart" id="priceChart">
+                <!-- Rendered by JS -->
+            </div>
+            <p class="price-note">※ 가격은 시중 평균가 기준이며, 브랜드/원산지에 따라 달라질 수 있습니다</p>
+        </div>
+    </section>
+
+    <!-- Best For Section -->
+    <section class="section best-section">
+        <div class="container">
+            <h2 class="section-title">목적별 추천 견과류</h2>
+            <p class="section-desc">건강 목적에 맞는 최적의 견과류를 찾아보세요</p>
+            <div class="best-grid">
+                <div class="best-card">
+                    <div class="best-icon">🧠</div>
+                    <h3>두뇌 건강</h3>
+                    <div class="best-recommend">
+                        <span class="best-nut">호두</span>
+                        <span class="best-reason">오메가3 지방산이 풍부</span>
+                    </div>
+                </div>
+                <div class="best-card">
+                    <div class="best-icon">💪</div>
+                    <h3>근육 생성</h3>
+                    <div class="best-recommend">
+                        <span class="best-nut">땅콩</span>
+                        <span class="best-reason">단백질 25.8g / 100g</span>
+                    </div>
+                </div>
+                <div class="best-card">
+                    <div class="best-icon">✨</div>
+                    <h3>피부 미용</h3>
+                    <div class="best-recommend">
+                        <span class="best-nut">아몬드</span>
+                        <span class="best-reason">비타민E 25.6mg / 100g</span>
+                    </div>
+                </div>
+                <div class="best-card">
+                    <div class="best-icon">❤️</div>
+                    <h3>심혈관 건강</h3>
+                    <div class="best-recommend">
+                        <span class="best-nut">마카다미아</span>
+                        <span class="best-reason">올레산(단일불포화지방) 최다</span>
+                    </div>
+                </div>
+                <div class="best-card">
+                    <div class="best-icon">🦴</div>
+                    <h3>뼈 건강</h3>
+                    <div class="best-recommend">
+                        <span class="best-nut">아몬드</span>
+                        <span class="best-reason">칼슘 269mg / 100g</span>
+                    </div>
+                </div>
+                <div class="best-card">
+                    <div class="best-icon">🛡️</div>
+                    <h3>면역력 강화</h3>
+                    <div class="best-recommend">
+                        <span class="best-nut">브라질너트</span>
+                        <span class="best-reason">셀레늄 1917mcg / 100g</span>
+                    </div>
+                </div>
+                <div class="best-card">
+                    <div class="best-icon">👁️</div>
+                    <h3>눈 건강</h3>
+                    <div class="best-recommend">
+                        <span class="best-nut">피스타치오</span>
+                        <span class="best-reason">루테인·제아잔틴 풍부</span>
+                    </div>
+                </div>
+                <div class="best-card">
+                    <div class="best-icon">⚡</div>
+                    <h3>다이어트</h3>
+                    <div class="best-recommend">
+                        <span class="best-nut">캐슈넛</span>
+                        <span class="best-reason">칼로리 대비 포만감 우수</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tip Section -->
+    <section class="section tip-section">
+        <div class="container">
+            <h2 class="section-title">견과류 섭취 꿀팁</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-number">01</div>
+                    <h3>하루 한 줌(30g)</h3>
+                    <p>견과류는 칼로리가 높으므로 하루 한 줌(약 30g)이 적정량입니다. 과다 섭취 시 체중 증가의 원인이 될 수 있습니다.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">02</div>
+                    <h3>생견과 > 볶음견과</h3>
+                    <p>가능하면 가공하지 않은 생견과를 선택하세요. 볶거나 소금을 첨가하면 영양소가 파괴되고 나트륨이 증가합니다.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">03</div>
+                    <h3>밀봉 냉장 보관</h3>
+                    <p>견과류의 불포화지방산은 산화되기 쉽습니다. 밀봉하여 냉장 보관하면 신선도를 오래 유지할 수 있습니다.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">04</div>
+                    <h3>다양하게 섭취</h3>
+                    <p>한 종류만 먹기보다 여러 종류를 혼합하여 섭취하면 다양한 영양소를 균형 있게 섭취할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>국내 견과류 비교 인포그래픽 &copy; 2025</p>
+            <p class="footer-note">본 자료는 식품의약품안전처, 농촌진흥청 식품성분표 등을 참고하여 작성되었습니다.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
